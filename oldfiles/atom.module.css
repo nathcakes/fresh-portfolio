@@ -1,0 +1,44 @@
+#main { width:600px; margin:50px auto; }
+#atom { width:500px; height:500px; /*border:1px solid red;*/ perspective: 1000px; position:relative; }
+
+#nucleus { position:absolute; z-index:0;top:50%; left:50%; margin: -125px 0 0 -125px; width:250px; height:250px; border-radius:250px; box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);}
+
+.orbit { position:absolute;top:0; left:0; width:500px; height:500px; border-radius:500px; transform-style: preserve-3d; transform: rotateX(80deg) rotateY(20deg);
+    animation-name: overlap; animation-iteration-count: infinite; animation-timing-function: steps(2,jump-both);}
+
+#atom .orbit:nth-child(1) {transform: rotateX(90deg) rotateY(0deg); animation-duration: 3s; animation-delay: -3.75s} /*node*/
+#atom .orbit:nth-child(2) {transform: rotateX(80deg) rotateY(60deg); animation-duration: 3s; animation-delay: -4s} /*node*/
+#atom .orbit:nth-child(3) {transform: rotateX(80deg) rotateY(-30deg); animation-duration: 3s; animation-delay: -4.5s} /*ts*/
+#atom .orbit:nth-child(4) {transform: rotateX(80deg) rotateY(-60deg); animation-duration: 3s; animation-delay: -3.5s}
+#atom .orbit:nth-child(5) {transform: rotateX(80deg) rotateY(90deg); animation-duration: 3s; animation-delay: -3.25s}
+
+#atom .orbit:nth-child(1) .path, #atom .orbit:nth-child(1) .electron {animation-delay: -0.75s}
+#atom .orbit:nth-child(2) .path, #atom .orbit:nth-child(2) .electron {animation-delay: -1.0s}
+#atom .orbit:nth-child(3) .path, #atom .orbit:nth-child(3) .electron {animation-delay: -1.5s}
+#atom .orbit:nth-child(4) .path, #atom .orbit:nth-child(4) .electron {animation-delay: -0.5s}
+#atom .orbit:nth-child(5) .path, #atom .orbit:nth-child(5) .electron {animation-delay: -0.25s}
+
+.path { width:500px; height:500px; position:relative; transform-style: preserve-3d; animation-name: pathRotate; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear; }
+
+.electron { position: absolute; top:-5px; left:50%; margin-left:-5px; width:40px; height:40px;
+    border-radius:15px; animation-name: electronFix; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;  }
+
+@keyframes pathRotate { from { transform: rotateZ(0deg); } to { transform: rotateZ(360deg); } }
+
+@keyframes electronFix { from { transform: rotateX(90deg) rotateY(0deg); } to { transform: rotateX(90deg) rotateY(-360deg); } }
+
+@keyframes overlap {from {z-index: -2} 50% {z-index: 2} to {z-index: -2}}
+
+
+/* work out how to do a stupid trail effect lol
+probably need to have an extra circle for each one
+then animate/transition it's opacity rapidly
+*/
+
+/* need to work out responsive design */
+
+.tsLogoFix { transform: rotateX(0deg) rotateY(-180deg) rotateZ(180deg); width: 37px; height: 37px;}
+.nodeLogoFix { transform: rotateX(0deg) rotateY(-180deg) rotateZ(180deg); width: 70px; height: 70px;}
+.javaLogoFix { transform: rotateX(0deg) rotateY(-180deg) rotateZ(220deg); width: 45px; height: 45px; }
+.reactFix { transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);width:50px; height: 50px}
+.pythonFix {transform: rotateY(180deg) rotateZ(90deg)}
