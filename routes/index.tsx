@@ -1,16 +1,17 @@
 import { Head } from "$fresh/runtime.ts"
 import {NavBar} from "/components/NavBar.tsx";
+import {Container} from "../components/Container.tsx";
 
 
 export default function HomePage() {
   return (
-      <>
+      <Container>
         <Head>
           <link rel="stylesheet" href="/atom.css" />
         </Head>
-        <NavBar />
-      <div class={"hero min-h-screen min-w-fit"}>
-        <div class={"hero-content flex-col lg:flex-row-reverse "}>
+        <div class={"hero min-h-screen min-w-fit"}>
+          <NavBar />
+          <div class={"hero-content flex-col lg:flex-row-reverse "}>
           <div id="atom">
             <div class={"orbit"}>
               <div class={"path"}>
@@ -67,13 +68,13 @@ export default function HomePage() {
           </div>
           </div>
           <div>
-            <h1 class={"text-5xl font-bold"}>Nate Brown</h1>
-            <p class={"py-6"}>
+            <h1 class={"text-5xl font-bold text-white"}>Nate Brown</h1>
+            <p class={"py-6 text-white"}>
               Full stack developer. Website is still in progress.
             </p>
           </div>
         </div>
       </div>
-      </>
+      </Container>
   );
 };
