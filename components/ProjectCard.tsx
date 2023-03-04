@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function ProjectCard(props: any, children: string){
     return(
@@ -8,11 +7,11 @@ export default function ProjectCard(props: any, children: string){
         <div className="card-body">
             <h2 className="card-title">{props.title}</h2>
             <p>{props.children}</p>
-            <Link href={props.link}>
+            <a href={props.link}>
             <div className="card-actions justify-end">
                 <button className="btn btn-primary">Check It Out</button>
             </div>
-            </Link>
+            </a>
         </div>
     </div>
         </>

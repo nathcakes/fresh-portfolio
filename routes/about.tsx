@@ -1,4 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
+import {NavBar} from "../components/NavBar.tsx";
 
 export const handler: Handlers = {
     async GET(req, ctx) {
@@ -9,9 +10,12 @@ export const handler: Handlers = {
 }
 export default function AboutPage(){
     return (
+        <>
+            <NavBar />
         <main>
             <h1>About</h1>
             <p>This is the about page</p>
         </main>
+        </>
     );
 }

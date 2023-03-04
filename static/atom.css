@@ -1,5 +1,5 @@
-#main { width:600px; margin:50px auto; }
-#atom { width:500px; height:500px; /*border:1px solid red;*/ perspective: 1000px; position:relative; }
+#main { width:600px; margin:50px auto; user-select: none; }
+#atom { width:500px; height:500px; /*border:1px solid red;*/ perspective: 1000px; position:relative; user-select: none; }
 
 #nucleus { position:absolute; z-index:0;top:50%; left:50%; margin: -125px 0 0 -125px; width:250px; height:250px; border-radius:250px; box-shadow: 1px 1px 2px 0px rgba(0,0,0,1);}
 
