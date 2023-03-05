@@ -8,10 +8,11 @@ export default function HomePage() {
       <Container>
         <Head>
           <link rel="stylesheet" href="/atom.css" />
+          <title>Nate Brown</title>
         </Head>
-        <div class={"hero min-h-screen min-w-fit"}>
+        <div class={"hero h-fit min-w-fit overflow-hidden"}>
           <NavBar />
-          <div class={"hero-content flex-col lg:flex-row-reverse overflow-hidden"}>
+          <div class={"hero-content min-h-screen flex-col mt-20 lg:flex-row-reverse md:mt-none"}>
           <div id="atom">
             <div class={"orbit"}>
               <div class={"path"}>

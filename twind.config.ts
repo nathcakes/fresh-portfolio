@@ -9,7 +9,7 @@ export default {
         'background-size': 'cover',
         'place-items': 'center',
         'display': 'grid',
-      'justify-content': 'space-evenly',
+        'justify-content': 'space-evenly',
     },
     'hero-overlay': {
         'height': '100%',

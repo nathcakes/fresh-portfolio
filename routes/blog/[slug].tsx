@@ -31,6 +31,7 @@ export default function PostPage(props: PageProps<Post>) {
                 "}"
 
           }} />
+        <title>{post.title}</title>
         </Head>
         <main class={"max-w-screen-md px-4 pt-16 mx-auto"}>
           <h1 class={"text-5xl font-bold text-white "}>{post.title}</h1>

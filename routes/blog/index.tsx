@@ -1,4 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { Head } from "$fresh/runtime.ts"
 import { NavBar } from "/components/NavBar.tsx";
 import  { Post, getPosts} from "/utils/posts.ts";
 import { Container } from "/components/Container.tsx";
@@ -45,6 +46,7 @@ export default function BlogPage(props: PageProps<Post[]>) {
     const posts = props.data;
     return (
         <Container>
+            <Head><title>Nate's Thoughts</title></Head>
         <NavBar />
             <main class={"max-w-screen-md px-4 pt-16 mx-auto"}>
                 <h1 class={"text-5xl text-white font-bold"}>Blog</h1>
