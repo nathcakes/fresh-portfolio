@@ -11,9 +11,9 @@ export default function HomePage() {
           <title>Nate Brown</title>
           <meta name={"viewport"} content={"width=device-width, initial-scale=1.0"} />
         </Head>
-        <div class={"hero h-fit min-w-fit overflow-hidden"}>
+        <div class={"hero h-screen min-w-fit overflow-hidden overscroll-none"}>
           <NavBar />
-          <div class={"hero-content min-h-screen flex-col mt-5 lg:flex-row-reverse md:mt-none"}>
+          <div class={"hero-content flex-col h-screen mt-5 lg:flex-row-reverse md:mt-none"}>
           <div id="atom">
             <div class={"orbit"}>
               <div class={"path"}>
