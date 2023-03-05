@@ -19,7 +19,7 @@ export default function HomePage() {
         </Head>
         <div class={"hero h-fit min-w-fit overflow-hidden"}>
           <NavBar />
-          <div class={"hero-content min-h-screen flex-col mt-20 lg:flex-row-reverse md:mt-none"}>
+          <div class={"hero-content min-h-screen flex-col mt-5 lg:flex-row-reverse md:mt-none"}>
           <div id="atom">
             <div class={"orbit"}>
               <div class={"path"}>
@@ -76,7 +76,7 @@ export default function HomePage() {
           </div>
           </div>
           <div>
-            <h1 class={"text-5xl font-bold text-white"}>Nate Brown</h1>
+            <h1 class={"text-5xl font-bold text-white text-center md:text-justify"}>Nate Brown</h1>
             <p class={"py-6 text-white"}>
               Full stack developer. Website is still in progress.
             </p>
