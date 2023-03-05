@@ -5,7 +5,6 @@ import {Container} from "../components/Container.tsx";
 const preventMotion = (e: TouchEvent) => {
   window.scrollTo(0, 0);
     e.preventDefault();
-    e.stopPropagation();
 }
 const disableScroll = window.addEventListener("touchmove", preventMotion, {passive: false});
 
