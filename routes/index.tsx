@@ -2,14 +2,10 @@ import { Head } from "$fresh/runtime.ts"
 import {NavBar} from "/components/NavBar.tsx";
 import {Container} from "../components/Container.tsx";
 
-let lastY:number ;
 const preventMotion = (e: TouchEvent) => {
-  const current = e.touches[0].clientY;
-  if (current !== lastY) {
-    return;
+  if (document?.scrollingElement?.scrollLeft !== 0) {
+    e.preventDefault();
   }
-  lastY = current;
-  e.preventDefault();
 }
 const disableScroll = window.addEventListener("touchmove", preventMotion, {passive: false});
 
