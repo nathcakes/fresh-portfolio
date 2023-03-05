@@ -11,7 +11,7 @@ export default function HomePage() {
         </Head>
         <div class={"hero min-h-screen min-w-fit"}>
           <NavBar />
-          <div class={"hero-content flex-col lg:flex-row-reverse "}>
+          <div class={"hero-content flex-col lg:flex-row-reverse overflow-hidden"}>
           <div id="atom">
             <div class={"orbit"}>
               <div class={"path"}>
