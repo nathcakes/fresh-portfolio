@@ -3,6 +3,9 @@ import {NavBar} from "/components/NavBar.tsx";
 import {Container} from "../components/Container.tsx";
 
 const preventMotion = (e: TouchEvent) => {
+  if (document?.scrollingElement?.scrollTop === 0){
+    return;
+  }
   window.scrollTo(0, 0);
     e.preventDefault();
 }
