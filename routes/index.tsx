@@ -2,6 +2,12 @@ import { Head } from "$fresh/runtime.ts"
 import {NavBar} from "/components/NavBar.tsx";
 import {Container} from "../components/Container.tsx";
 
+const preventMotion = (e: TouchEvent) => {
+  window.scrollTo(0, 0);
+    e.preventDefault();
+    e.stopPropagation();
+}
+const disableScroll = window.addEventListener("touchmove", preventMotion, {passive: false});
 
 export default function HomePage() {
   return (
@@ -9,6 +15,7 @@ export default function HomePage() {
         <Head>
           <link rel="stylesheet" href="/atom.css" />
           <title>Nate Brown</title>
+          {disableScroll}
         </Head>
         <div class={"hero h-fit min-w-fit overflow-hidden"}>
           <NavBar />
