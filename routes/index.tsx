@@ -71,9 +71,12 @@ export default function HomePage() {
           </div>
           </div>
           <div>
-            <h1 class={"text-5xl font-bold text-white text-center md:text-justify"}>Nate Brown</h1>
-            <p class={"py-6 text-white"}>
-              Full stack developer. Website is still in progress.
+            <h1 class={"text-5xl font-bold text-white text-center md:text-justify"}>Hi I'm Nate! </h1>
+            <p class={"py-6 text-white "}>
+              I'm a junior backend developer and <br></br>
+              student with a passion for technology. I want to <br></br>
+              work on projects that makes peoples lives easier <br></br>
+              in an effortless and intuitive way.
             </p>
           </div>
         </div>
