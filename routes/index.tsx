@@ -2,7 +2,8 @@ import { Head } from "$fresh/runtime.ts"
 import {NavBar} from "/components/NavBar.tsx";
 import {Container} from "../components/Container.tsx";
 
-
+//Enhancement idea: hover the area and the icons line up to the right of it (underneath for mobile)
+//Each icon is either a link to a project or info about what I know about it idk.
 export default function HomePage() {
   return (
       <Container>

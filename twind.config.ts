@@ -1,6 +1,7 @@
 import { Options } from "$fresh/plugins/twind.ts";
 export default {
   selfURL: import.meta.url,
+
   plugins:{
     /* daisyUI definitions of hero component */
     'hero': {
@@ -28,5 +29,5 @@ export default {
         'padding': '1rem',
         'display': 'flex'
     }
-  },
+    },
 } as Options;
