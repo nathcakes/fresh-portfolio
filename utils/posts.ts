@@ -7,6 +7,7 @@ export interface Post {
     content: string;
     snippet: string;
     status: string;
+    tags: string;
 }
 
 //This is the function that grabs all the posts from the folder, and returns them as an array of Post objects
@@ -32,6 +33,7 @@ export async function getPost(slug: string): Promise<Post | null> {
         publishedAt: new Date(attrs.published_at),
         content: body,
         snippet: attrs.snippet,
-        status: attrs.status
+        status: attrs.status,
+        tags: attrs.tags
     };
 }
