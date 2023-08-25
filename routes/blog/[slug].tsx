@@ -20,30 +20,22 @@ export default function PostPage(props: PageProps<Post>) {
       <NavBar />
         <Head>
           <style dangerouslySetInnerHTML={{
-            __html: "h2 {\n" +
-                "    font-size: 1.5em;\n" +
-                "    font-weight: bold;\n" +
-                "    margin: 0.67em 0;\n" +
-                "    text-align: left;\n" +
-                "    color: white;\n" +
-                "}\n" +"h2>a {\n" +
-                "    display: none;\n" +
-                "}"
+            __html: CSS
 
           }} />
         <title>{post.title}</title>
         </Head>
-        <main class={"max-w-screen-md px-4 pt-16 mx-auto"}>
-          <h1 class={"text-5xl font-bold text-white "}>{post.title}</h1>
-          <time class={"text-white opacity-60"}>
+        <main className={"max-w-screen-md px-4 pt-16 mx-auto"}>
+          <h1 className={"text-4xl font-bold text-white mt-16"}>{post.title}</h1>
+          <time className={"text-white opacity-60"}>
             {new Date(post.publishedAt).toLocaleDateString("en-us", {
                 year: "numeric",
                 month: "long",
                 day: "numeric"
             })}
             </time>
-          <div data-color-mode="dark" data-dark-theme="dark" class={"mt-8 markdown-body text-white opacity-81"} dangerouslySetInnerHTML={{ __html: render(post.content) }} />
-          <a class={"btn text-white"} href={"/blog"}> Back to All Posts</a>
+          <div data-color-mode="dark" data-dark-theme="dark" class={"mt-8 mb-8 markdown-body text-white opacity-81"} dangerouslySetInnerHTML={{ __html: render(post.content) }} />
+          <a className={"btn rounded-full bg-white py-2 px-4 mt-8 text-black font-bold"} href={"/blog"}>Back</a>
         </main>
       </Container>
   );
