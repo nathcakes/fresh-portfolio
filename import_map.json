@@ -8,9 +8,7 @@
     "preact/": "https://esm.sh/preact@10.13.1/",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
-    "framer-motion": "https://esm.sh/v106/*framer-motion@9.0.4?alias=react:preact/compat&deps=react",
     "$gfm": "https://deno.land/x/gfm@0.2.1/mod.ts",
-    "@emotion/is-prop-valid": "https://esm.sh/@emotion/is-prop-valid",
     "/": "./",
     "./": "./",
     "@/": "./"
