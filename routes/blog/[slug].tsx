@@ -34,7 +34,7 @@ export default function PostPage(props: PageProps<Post>) {
                 day: "numeric"
             })}
             </time>
-          <div data-color-mode="dark" data-dark-theme="dark" class={"mt-8 mb-8 markdown-body text-white opacity-81"} dangerouslySetInnerHTML={{ __html: render(post.content) }} />
+          <div data-color-mode="dark" data-dark-theme="dark" className={"mt-8 mb-8 markdown-body text-white opacity-81"} dangerouslySetInnerHTML={{ __html: render(post.content) }} />
           <a className={"btn rounded-full bg-white py-2 px-4 mt-8 text-black font-bold"} href={"/blog"}>Back</a>
         </main>
       </Container>

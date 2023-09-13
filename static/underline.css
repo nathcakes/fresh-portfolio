@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Layout */
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 0 2rem;
+}
+
+/* Underline styles */
+li>a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+/* Fade in */
+li>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #ac69ff;
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Slide in */
+li>a {
+    overflow: hidden;
+}
+
+li>a::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+
+li>a:hover::after,
+li>a:focus::after{
+    transform: translate3d(0, 0, 0);
+}
+
