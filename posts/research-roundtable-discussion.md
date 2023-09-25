@@ -1,6 +1,6 @@
 ---
 title: Takeaways from The Research Roundtable
-published_at: 2023-08-18T19:30:00Z
+published_at: 2023-08-11T19:30:00Z
 snippet: Reflecting on the discussion from our roundtable with academic staff from Curtin University.
 status: post
 tags: NPSC2001, journal, reflection
