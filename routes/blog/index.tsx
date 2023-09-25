@@ -55,7 +55,8 @@ export default function BlogPage(props: PageProps<Post[]>) {
         <NavBar />
             <main class={"max-w-screen-md px-4 pt-16 mx-auto mt-20"}>
                 <h1 class={"text-5xl text-white font-bold"}>My latest thoughts<span class="tripleAnim"></span></h1>
-                <div class={"mt-8"}>
+                <h4 class={"text-xl text-white"}>All posts are submissions for NPSC2001 Reflection Journal</h4>
+                <div class={"mt-4"}>
                     {posts.map((post) => post.status=== "draft" ? <></> : <PostCard post={post} />)}
                 </div>
             </main>
