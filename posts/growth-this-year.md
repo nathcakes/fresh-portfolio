@@ -1,5 +1,5 @@
 ---
-title: Reflection on my growth throughout 2023
+title: Reflection On My Growth Throughout 2023
 published_at: 2023-09-25T22:29:11Z  
 snippet: A reflection on my growth throughout 2023 and comparing my skills to the self-assessment I took at the start of the year. 
 status: published  
