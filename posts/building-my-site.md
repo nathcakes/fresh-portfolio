@@ -26,3 +26,6 @@ At least on your first try. Take advantage of the stuff that's out there, I got 
 This goes hand in hand with the simple designs, but once you have gotten a design out on a page, implement the most basic blocks first. Put all your pieces on the page. Then tackle one at a time how you will style and interact with them. 
     This advice won't always work for more complex projects but certainly on your portfolio site or blog, it's a good idea to start small and build up.
 
+The code for my website is available on Github for others to learn from and use as a template. 
+
+**Artefact:** [Github Repository for Nateb.Dev](https://github.com/nathcakes/fresh-portfolio)

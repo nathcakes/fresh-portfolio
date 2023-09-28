@@ -13,5 +13,8 @@ One of the first big differences in the coursework was having graded homework du
 
 The biggest thing I gained from my experience was a new community. On-campus life at Purdue is very different from Curtin. I believe this is due to more students living on campus, bigger student clubs and more spaces to study and hang out with friends. The community I found was a club called Purdue Hackers, a group that met every Friday night and "hacked" into the early morning. We weren't hacking into computers; we hacked on projects and helped encourage each other to try new technologies and make software. They challenged me to grow my skills, and joining the club was definitely the highlight of my experience at Purdue.
 
+![Image of me participating in a Purdue Hackers event](/hackers-fun.png)
+_Figure 1: A photo of me demonstrating a project I was working on to other Purdue Hackers._
+
 I have brought some of my learning back to Curtin with me. I still use the Shovel app and now read ahead of my lectures, which has helped me this semester as I dive into more complex topics. I am still yearning for an experience like Purdue Hackers; maybe next year, I can work with COMSSA to create a similar experience on campus.
 

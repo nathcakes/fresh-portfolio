@@ -17,6 +17,7 @@ How, then, can students use this powerful new tool to learn and gain knowledge? 
 These are just a few of the ways ChatGPT has helped me learn this year and develop my skills, ready for life after university. I'd like to record the lightning talk I gave at the Microsoft Student Accelerator meetup in August, which had more suggestions on how to best use LLMs for students I'll update this post with a link when I manage to do so, but here's an image of the event in the meantime!
 
 ![](/MicrosoftMeetup.jpeg)
+_Figure 1: A collage of images from the Microsoft Student Accelerator event including my presentation_
 
 
 ## References 
